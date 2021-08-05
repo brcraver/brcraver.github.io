@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <p>PlusFriends</p>
+
+        <script>
+            var app = angular.module('PlusFriends',[]);
+            app.controller('divCtrlInicial', function($scope, $http){
+                $http.get("")
+            })
+        </script>
+
+    </head>
+    <body>
+        <div class="divInicial" id="divInicial" ng-app="PlusFriends" ng-controller="divCtrlInicial">
+            <p>Olá {{usuario}}</p>
+        </div>
+    </body>
+</html>

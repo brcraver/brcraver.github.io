@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-animate.js"></script>
+    <script src="bower_components/cpf_cnpj/build/cpf.js"></script>
+    <script src="bower_components/cpf_cnpj/build/cnpj.js"></script>
+    <script src="bower_components/ng-cpf-cnpj/lib/ngCpfCnpj.js"></script>
+    <script type="text/javascript" src="JavaScript/JS-TelaInicial.js"></script>
+    <link rel="icon" href="Imagem/HeaderLogo.png" type="image/icon type">
+    <link rel="stylesheet" href="CSS/CSS-TelaInicial.css" Type="text/css">
+    <link rel="stylesheet" href="CSS/CSS-TelaCadastro.css" Type="text/css">
+    <link rel="stylesheet" href="CSS/CSS-TelaContinuaCadastro.css" Type="text/css">
+    <link rel="stylesheet" href="CSS/CSS-PopUp.css" Type="text/css">
+
+    <title>PlusFriends</title>
+
+    <script>
+        window.onload = function () {
+            setTimeout(function(){
+                document.getElementById('imgFundo3').style.opacity = "100%";
+            },300);
+            setTimeout(function(){
+                document.getElementById('imgFundo2').style.opacity = "100%";
+            },600);
+            setTimeout(function(){
+                document.getElementById('imgFundo1').style.opacity = "100%";
+            },900);
+        }
+    </script>
+
+    <script>
+        var app = angular.module('PlusFriends',[ngAnimate]);
+    </script>
+
+    <script>
+        angular.module('PlusFriends',[ngCpfCnpj]);
+
+    </script>
+
+    <script>
+        var app = angular.module('PlusFriends',[]);
+
+
+
+
+
+        app.controller('meuCtrlInicial', function($scope) {
+            //usuário admin login
+            $scope.nom_usuario_admin = "admin";
+            $scope.senha_admin = "admin123";
+            $scope.cod_perfil = 1;
+            $scope.email = null;
+            $scope.usuario = null;
+            $scope.senha = null;
+            $scope.nome_usuario = null;
+
+
+          $scope.NGM_UsuarioEmail= "Usuário/ E-mail";
+          $scope.NGM_Senha= "*******";
+          $scope.NGM_UsuarioNovoCadastro= "Usuário";
+          $scope.NGM_EmailNovoCadastro= "E-mail";
+          $scope.NGM_SenhaNovoCadastro= "*******";
+          $scope.NGM_ConfirmSenhaNovoCadastro= "*******";
+          $scope.NGM_NomeNovoCadastro= "Nome";
+          $scope.NGM_SobrenomeNovoCadastro= "Sobrenome";
+          $scope.NGM_CPFNovoCadastro= "xxx.xxx.xxx-xx";
+
+
+          //focus
+          $scope.NGFfocusUsuarioEmail = function(){
+            if($scope.NGM_UsuarioEmail == 'Usuário/ E-mail') 
+                $scope.NGM_UsuarioEmail = "";
+             }
+
+          $scope.NGFfocusSenhaLogin = function(){
+            if($scope.NGM_Senha == '*******') 
+                $scope.NGM_Senha = "";
+          }
+
+          $scope.NGFfocusUsuarioNovoCadastro = function(){
+              if($scope.NGM_UsuarioNovoCadastro == "Usuário")
+                $scope.NGM_UsuarioNovoCadastro = "";
+          }
+
+          $scope.NGFfocusEmailNovoCadastro = function(){
+              if($scope.NGM_EmailNovoCadastro == "E-mail")
+                $scope.NGM_EmailNovoCadastro = "";
+          }
+
+          $scope.NGFfocusSenhaCadastro = function(){
+              if($scope.NGM_SenhaNovoCadastro == "*******")
+                $scope.NGM_SenhaNovoCadastro = "";
+          }
+
+          $scope.NGFfocusConfirmSenhaCadastro = function(){
+              if($scope.NGM_ConfirmSenhaNovoCadastro == "*******")
+                $scope.NGM_ConfirmSenhaNovoCadastro = "";
+          }
+          $scope.NGFnomeNovoCadastro = function(){
+            if($scope.NGM_NomeNovoCadastro == 'Nome') 
+                $scope.NGM_NomeNovoCadastro = "";
+          }
+
+          $scope.NGFsobrenomeNovoCadastro = function(){
+            if($scope.NGM_SobrenomeNovoCadastro == 'Sobrenome') 
+                $scope.NGM_SobrenomeNovoCadastro = "";
+          }
+
+          $scope.NGFCPFNovoCadastro = function(){
+            if($scope.NGM_CPFNovoCadastro == 'xxx.xxx.xxx-xx') 
+                $scope.NGM_CPFNovoCadastro = "";
+          }
+          
+
+
+          //blur
+          $scope.NGBblurUsuarioEmail = function(){
+            if($scope.NGM_UsuarioEmail == '') 
+                $scope.NGM_UsuarioEmail = "Usuário/ E-mail";
+             }
+
+          $scope.NGBblurSenhaLogin = function(){
+            if($scope.NGM_Senha == '') 
+                $scope.NGM_Senha = "*******";
+          }
+
+          $scope.NGBblurUsuarioNovoCadastro = function(){
+              if($scope.NGM_UsuarioNovoCadastro == "")
+                $scope.NGM_UsuarioNovoCadastro = "Usuário"
+          }
+
+          $scope.NGBblurEmailNovoCadastro = function(){
+              if($scope.NGM_EmailNovoCadastro == "")
+                $scope.NGM_EmailNovoCadastro = "E-mail";
+          }
+
+          $scope.NGBblurSenhaCadastro = function(){
+              if($scope.NGM_SenhaNovoCadastro == "")
+                $scope.NGM_SenhaNovoCadastro = "*******"
+          }
+
+          $scope.NGBblurConfirmSenhaCadastro = function(){
+              if($scope.NGM_ConfirmSenhaNovoCadastro == "")
+                $scope.NGM_ConfirmSenhaNovoCadastro = "*******";
+          }
+
+          $scope.NGBnomeNovoCadastro = function(){
+            if($scope.NGM_NomeNovoCadastro == "") 
+                $scope.NGM_NomeNovoCadastro = 'Nome';
+          }
+
+          $scope.NGBsobrenomeNovoCadastro = function(){
+            if($scope.NGM_SobrenomeNovoCadastro == "") 
+                $scope.NGM_SobrenomeNovoCadastro = 'Sobrenome';
+          }
+
+          $scope.NGBCPFNovoCadastro = function(){
+            if($scope.NGM_CPFNovoCadastro == "") 
+                $scope.NGM_CPFNovoCadastro = 'xxx.xxx.xxx-xx';
+          }
+
+         
+          $scope.NGBblurValidApNum = function(){
+              if(isNaN($scope.NGM_IdadeNovoCadastro))
+                 $scope.NGM_IdadeNovoCadastro = null;
+              if($scope.NGM_IdadeNovoCadastro > 99 || $scope.NGM_IdadeNovoCadastro < 16)
+                $scope.NGM_IdadeNovoCadastro = null;
+          }
+
+
+          //*********Click*********//
+
+          //Novo Cadastro
+          $scope.NGCcadastroNovo = function(){
+                    document.getElementById('txMais').style.transition = "all linear 1s";
+                    document.getElementById('txPlus').style.transition = "all linear 1s";
+                    document.getElementById('txFriends').style.transition = "all linear 1s";                    
+                    document.getElementById('imgFundo1').style.filter = "blur(5px)";
+                    document.getElementById('imgFundo2').style.filter = "blur(5px)";
+                    document.getElementById('imgFundo3').style.filter = "blur(5px)";
+                    document.getElementById('txMais').style.left = "-21%";
+                    document.getElementById('txPlus').style.left = "-30%";
+                    document.getElementById('txFriends').style.left = "-48%";
+                    document.getElementById('tbSenha').style.left = "-20%";
+                    document.getElementById('tbUsuarioEmail').style.left = "-20%";
+
+                    document.getElementById('divBtsLogin').style.left = "-30%";
+                    document.getElementById('divBtsLogin').style.opacity = "-100%";
+
+                document.getElementById('divCadastro').style.left = "30%";
+ 
+                document.getElementById('imgFundo1').style.filter = "blur(5px)";
+                document.getElementById('imgFundo2').style.filter = "blur(5px)";
+                document.getElementById('imgFundo3').style.filter = "blur(5px)";
+          }
+
+          //Avançar Cadastro
+          $scope.NGCavancarCadastro = function(){
+                if(($scope.NGM_UsuarioNovoCadastro == null || $scope.NGM_UsuarioNovoCadastro == "Usuário")){                   
+                    document.getElementById('popUp').style.opacity = "100%";
+                    document.getElementById('popUp').style.top = "5%";
+                    $scope.txtMsgPopUp = "Preencha o nome de usuário";
+                }
+                else if(($scope.NGM_EmailNovoCadastro == null || $scope.NGM_EmailNovoCadastro == "E-mail")){                   
+                    document.getElementById('popUp').style.opacity = "100%";
+                    document.getElementById('popUp').style.top = "5%";
+                    $scope.txtMsgPopUp = "Preencha o e-mail";
+                }
+                else if(!($scope.NGM_SenhaNovoCadastro == $scope.NGM_ConfirmSenhaNovoCadastro)){
+                    document.getElementById('popUp').style.opacity = "100%";
+                    document.getElementById('popUp').style.top = "5%";
+                    $scope.txtMsgPopUp = "As senhas precisam ser iguais e possuirem mais que 8 dígitos.";
+                }
+                else if(($scope.NGM_IdadeNovoCadastro < 16 && $scope.NGM_IdadeNovoCadastro > 99) || $scope.NGM_IdadeNovoCadastro == null){
+                    document.getElementById('popUp').style.opacity = "100%";
+                    document.getElementById('popUp').style.top = "5%";
+                    $scope.txtMsgPopUp = "Preencha uma idade válida entre 16 e 99 anos.";
+                }
+                else if($scope.NGM_SexoNovoCadastro == ""){
+                    document.getElementById('popUp').style.opacity = "100%";
+                    document.getElementById('popUp').style.top = "5%";
+                    $scope.txtMsgPopUp = "Digite seu sexo.";
+                }else{
+                    document.getElementById('divCadastro').style.left = "-50%";
+                    document.getElementById('divCadastro').style.opacity = "0%";
+
+                    document.getElementById('divContinuaCadastro').style.left = "30%";
+                    document.getElementById('divContinuaCadastro').style.opacity = "100%";
+                }
+           }
+           
+           //Concluir Cadastro
+          $scope.NGCconcluirCadastro = function(){
+                if(($scope.NGM_NomeNovoCadastro == null || $scope.NGM_NomeNovoCadastro == "Nome")){                   
+                    document.getElementById('popUp').style.opacity = "100%";
+                    document.getElementById('popUp').style.top = "5%";
+                    $scope.txtMsgPopUp = "Preencha o seu Nome.";
+                }
+                else if(($scope.NGM_SobrenomeNovoCadastro == null || $scope.NGM_SobrenomeNovoCadastro == "Sobrenome")){                   
+                    document.getElementById('popUp').style.opacity = "100%";
+                    document.getElementById('popUp').style.top = "5%";
+                    $scope.txtMsgPopUp = "Preencha o seu Sobrenome.";
+                }
+                else if(($scope.NGM_CPFNovoCadastro == null || $scope.NGM_CPFNovoCadastro == "xxx.xxx.xxx-xx")){
+                    document.getElementById('popUp').style.opacity = "100%";
+                    document.getElementById('popUp').style.top = "5%";
+                    $scope.txtMsgPopUp = "Preencha o seu CPF.";
+                }
+                else{
+                    document.getElementById('txMais').style.transition = "all linear 0.5s";
+                    document.getElementById('txPlus').style.transition = "all linear 0.5s";
+                    document.getElementById('txFriends').style.transition = "all linear 0.5";                    
+                    document.getElementById('imgFundo1').style.filter = "blur(0px)";
+                    document.getElementById('imgFundo2').style.filter = "blur(0px)";
+                    document.getElementById('imgFundo3').style.filter = "blur(0px)";
+                    document.getElementById('txMais').style.left = "21%";
+                    document.getElementById('txPlus').style.left = "30%";
+                    document.getElementById('txFriends').style.left = "48%";
+                    document.getElementById('tbSenha').style.left = "20%";
+                    document.getElementById('tbUsuarioEmail').style.left = "20%";
+
+                    document.getElementById('divBtsLogin').style.left = "30%";
+                    document.getElementById('divBtsLogin').style.opacity = "100%";
+
+                    document.getElementById('divContinuaCadastro').style.left = "200%";
+                    document.getElementById('divContinuaCadastro').style.opacity = "0%";
+
+                    document.getElementById('popUp').style.opacity = "100%";
+                    document.getElementById('popUp').style.top = "5%";
+                    $scope.txtMsgPopUp = "Cadastro Realizado com Sucesso!";
+
+
+                    $scope.usuario = $scope.NGM_UsuarioNovoCadastro;
+                    $scope.email = $scope.NGM_EmailNovoCadastro;
+                    $scope.senha = $scope.NGM_SenhaNovoCadastro;
+
+
+                    $scope.NGM_UsuarioEmail= "Usuário/ E-mail";
+                    $scope.NGM_Senha= "*******";
+                    $scope.NGM_UsuarioNovoCadastro= "Usuário";
+                    $scope.NGM_EmailNovoCadastro= "E-mail";
+                    $scope.NGM_SenhaNovoCadastro= "*******";
+                    $scope.NGM_ConfirmSenhaNovoCadastro= "*******";
+                    $scope.NGM_NomeNovoCadastro= "Nome";
+                    $scope.NGM_SobrenomeNovoCadastro= "Sobrenome";
+                    $scope.NGM_CPFNovoCadastro= "xxx.xxx.xxx-xx";
+                }
+           }
+
+           //Voltar Cadastro
+           $scope.NGCvoltarCadastro = function(){
+                document.getElementById('txMais').style.transition = "all linear 0.5s";
+                document.getElementById('txPlus').style.transition = "all linear 0.5s";
+                document.getElementById('txFriends').style.transition = "all linear 0.4s";                    
+                document.getElementById('imgFundo1').style.filter = "blur(0px)";
+                document.getElementById('imgFundo2').style.filter = "blur(0px)";
+                document.getElementById('imgFundo3').style.filter = "blur(0px)";
+                document.getElementById('txMais').style.left = "21%";
+                document.getElementById('txPlus').style.left = "30%";
+                document.getElementById('txFriends').style.left = "48%";
+                document.getElementById('tbSenha').style.left = "20%";
+                document.getElementById('tbUsuarioEmail').style.left = "20%";
+
+                document.getElementById('divBtsLogin').style.left = "30%";
+                document.getElementById('divBtsLogin').style.opacity = "100%";
+
+                document.getElementById('divCadastro').style.left = "100%";           
+            }
+
+            //Voltar Continuação Cadastro
+           $scope.NGCvoltarCadastro2 = function(){
+
+                document.getElementById('divCadastro').style.left = "30%";  
+                document.getElementById('divCadastro').style.opacity = "100%";  
+
+
+                document.getElementById('divContinuaCadastro').style.left = "200%";  
+                document.getElementById('divContinuaCadastro').style.opacity = "0%";  
+
+
+
+            }
+
+           //Fechar Pop Up
+           $scope.NGCbtFecharPopUp = function(){
+            document.getElementById('popUp').style.opacity = "0%";
+            document.getElementById('popUp').style.top = "-5%";
+           }
+
+          //Logar
+          $scope.NGClogar = function(){
+              if((!($scope.NGM_UsuarioEmail == $scope.usuario) && !($scope.NGM_UsuarioEmail == $scope.email) && !($scope.NGM_UsuarioEmail == $scope.nom_usuario_admin))){
+                document.getElementById('popUp').style.opacity = "100%";
+                document.getElementById('popUp').style.top = "5%";
+                $scope.txtMsgPopUp = "Usuário ou E-mail não cadastrado.";
+              }
+              else if(!($scope.NGM_Senha == $scope.senha)  && !($scope.NGM_UsuarioEmail == $scope.nom_usuario_admin && $scope.NGM_Senha == $scope.senha_admin)){
+                document.getElementById('popUp').style.opacity = "100%";
+                document.getElementById('popUp').style.top = "5%";
+                $scope.txtMsgPopUp = "Usuário, E-mail e/ou Senha não cadastrada.";
+              }
+              else{
+                window.location.href = "HTML/PaginaPrincipal.html";
+              }
+
+
+
+          }
+
+
+          //Upload de arquivo
+            $scope.NGCadicionarArquivo = function() {
+                var f = document.getElementById('leitorDeArquivo').files[0],
+                    r = new FileReader();
+
+                r.onloadend = function(e) {
+                var data = e.target.result;
+                //send your binary data via $http or $resource or do anything else with it
+                }
+
+                r.readAsBinaryString(f);
+            }
+
+
+
+            //*********Keypress*********//
+            $scope.NGKmascaraCPF = function(){
+                if($scope.NGM_CPFNovoCadastro.length == 3){
+                    $scope.NGM_CPFNovoCadastro = $scope.NGM_CPFNovoCadastro + ".";
+                }
+                if($scope.NGM_CPFNovoCadastro.length == 7){
+                    $scope.NGM_CPFNovoCadastro = $scope.NGM_CPFNovoCadastro + ".";
+                }
+                if($scope.NGM_CPFNovoCadastro.length == 11){
+                    $scope.NGM_CPFNovoCadastro = $scope.NGM_CPFNovoCadastro + "-";
+                }
+            }
+
+        });
+
+
+
+        app.controller('meuCrtlInicial', function($scope, $http){
+            $scope.postdata = function(NGM_UsuarioEmail){
+                var data = {NGM_UsuarioEmail: NGM_UsuarioEmail};
+                $http.post('/api/users/post', JSON.stringify(data)).then(function(response){
+                    if(response.data)
+                        $scope.msg = "Post Data Submitted Successfully!";
+                }, function(response){
+                    $scope.msg = "Service not Exists";
+                    $scope.statusval = response.status;
+                    $scope.statustext = response.statusText;
+                    $scope.headers = response.headers();
+                });
+            };
+        });
+
+
+
+    </script>
+
+</head>
+
+<body data-ng-app="PlusFriends" data-ng-controller="meuCtrlInicial">
+
+<div class="divRolagem" id="divRolagem">
+    <div class="popUp" id="popUp">
+        <div class="msgPopUp" id="msgPopUp" data-ng-model="NGMtxtMsgPopUp" data-ng-bind="txtMsgPopUp"></div>
+        <div class="btPopUp" id="btPopUp" data-ng-click="NGCbtFecharPopUp()">Okay</div>
+    </div>
+
+    <div>
+
+        <div class="divInicial"  data-ng-hide="NGM_NovoCadastro">
+            <img class="imgFundo1" id="imgFundo1" src="Imagem/FundoInicial.jpg"/>
+            <img class="imgFundo2" id="imgFundo2" src="Imagem/FundoInicial2.jpg"/>
+            <img class="imgFundo3" id="imgFundo3" src="Imagem/FundoInicial3.jpg"/>
+
+
+
+            <div class="divBtsLogin" id="divBtsLogin">
+                <div class="txMais" id="txMais">+</div><div class="txPlus" id="txPlus">Plus</div><div class="txFriends" id="txFriends">Friends</div>
+                <input type="text" data-ng-focus="NGFfocusUsuarioEmail()" data-ng-blur="NGBblurUsuarioEmail()" data-ng-model="NGM_UsuarioEmail" class="tbUsuarioEmail" id="tbUsuarioEmail">
+                <input type="password" data-ng-focus="NGFfocusSenhaLogin()" data-ng-blur="NGBblurSenhaLogin()" data-ng-model="NGM_Senha" class="tbSenha" id="tbSenha">
+                <div class="btLogin" data-ng-click="NGClogar()">Login</div>
+                <input type="button" class="btCadastro" id="btCadastro" data-ng-click="NGCcadastroNovo()" value="Nao possui cadastro? Clique aqui e cadastre-se  agora!" > 
+                <input type='checkbox' data-ng-model="NGM_NovoCadastro" class="cbCadastroNovo"  id="cbCadastro" >
+
+                <!--<p>Output Message : {{msg}}</p>
+
+                <p>StatusCode: {{statusval}}</p>
+                
+                <p>Status: {{statustext}}</p>
+                
+                <p>Response Headers: {{headers}}</p>-->
+            
+            </div>
+                
+            <div class="divCadastro" id="divCadastro">
+                <div class="divBtsCadastro">
+                    <div class="txMaisCadastro" id="txMaisCadastro">+</div><div class="txPlusCadastro" id="txPlusCadastro">Cada</div><div class="txFriendsCadastro" id="txFriendsCadastro">stro</div>
+                    <input type="text" data-ng-focus="NGFfocusUsuarioNovoCadastro()" data-ng-blur="NGBblurUsuarioNovoCadastro()" data-ng-model="NGM_UsuarioNovoCadastro" class="tbUsuarioNovoCadastro" id="tbUsuarioNovoCadastro">
+                    <input type="email" data-ng-focus="NGFfocusEmailNovoCadastro()" data-ng-blur="NGBblurEmailNovoCadastro()" data-ng-model="NGM_EmailNovoCadastro" class="tbEmailNovoCadastro" id="tbEmailNovoCadastro">
+                    <input type="password" data-ng-focus="NGFfocusSenhaCadastro()" data-ng-blur="NGBblurSenhaCadastro()" data-ng-model="NGM_SenhaNovoCadastro" class="tbSenhaNovoCadastro" id="tbSenhaNovoCadastro" maxlength="16" minlength="8"/>
+                    <input type="password" data-ng-focus="NGFfocusConfirmSenhaCadastro()" data-ng-blur="NGBblurConfirmSenhaCadastro()" data-ng-model="NGM_ConfirmSenhaNovoCadastro" class="tbConfirmSenhaNovoCadastro" id="tbConfirmSenhaNovoCadastro">
+                    <p class="txSenhaCadastro" id="txSenhaCadastro">Senha :</p>
+                    <p class="txConfirmSenhaCadastro" id="txConfirmSenhaCadastro">Confirm. Senha :</p>
+                    <p class="txIdadeCadastro" id="txIdadeCadastro">Idade :</p>
+                    <p class="txSexoCadastro" id="txSexoCadastro">Sexo :</p>
+                    <input type="number" data-ng-blur="NGBblurValidApNum()" data-ng-trim="true" min="16" max="99" maxlength="2" data-ng-model="NGM_IdadeNovoCadastro" class="tbIdadeNovoCadastro" id="tbIdadeNovoCadastro"/>
+                    <input type="text" data-ng-model="NGM_SexoNovoCadastro" class="tbSexoNovoCadastro" id="tbSexoNovoCadastro">
+                    <input type="button" class="btVoltarCadastro" id="btVoltarCadastro" data-ng-click="NGCvoltarCadastro()" value="Voltar" > 
+                    <div class="btAvancarCadastro" id="btAvancarCadastro" data-ng-model="NGM_btAvancarCadastro" data-ng-click="NGCavancarCadastro()">Avançar</div>
+                    
+                    <input type="text" class="imputMsgPopUp" id="imputMsgPopUp" data-ng-model="txtMsgPopUp">
+                </div>
+            </div>
+
+            <div class="divContinuaCadastro" id="divContinuaCadastro">
+                <div class="divBtsContinuaCadastro">
+
+                    <div class="txMaisContinuaCadastro" id="txMaisContinuaCadastro">+</div><div class="txPlusContinuaCadastro" id="txPlusContinuaCadastro">Cada</div><div class="txFriendsContinuaCadastro" id="txFriendsContinuaCadastro">stro</div>
+                    <input type="text" class="tbNomeNovoCadastro" id="tbNomeNovoCadastro" data-ng-model="NGM_NomeNovoCadastro" data-ng-focus="NGFnomeNovoCadastro()" data-ng-blur="NGBnomeNovoCadastro()"/>
+                    <input type="text" class="tbSobrenomeNovoCadastro" id="tbSobrenomeNovoCadastro" data-ng-model="NGM_SobrenomeNovoCadastro" data-ng-focus="NGFsobrenomeNovoCadastro()" data-ng-blur="NGBsobrenomeNovoCadastro()"/>
+                    <p class="txCPFCadastro" id="txCPFCadastro">CPF:</p>
+                    <input type="text" name="cpf" class="tbCPFNovoCadastro" id="tbCPFNovoCadastro" data-ng-model="NGM_CPFNovoCadastro" data-ng-focus="NGFCPFNovoCadastro()" data-ng-blur="NGBCPFNovoCadastro()" data-ng-keypress="NGKmascaraCPF()" maxlength="14" minlength="14" only-numbers/>
+                    <p class="txRGFrenteCadastro" id="txRGFrenteCadastro">Frente do RG/ CNH</p>
+                    <div class="imgFRGFrente" id="imgFRGFrente"></div>
+                    <input type="file" id="FRGFrente" name="FRGFrente" class="FRGFrente"/>
+                    <p class="txRGTrasCadastro" id="txRGTrasCadastro">Costas do RG/ CNH</p>
+                    <div class="imgFRGCosta" id="imgFRGCosta"></div>
+                    <input type="file" id="FRGCosta" name="FRGCosta" class="FRGCosta"/>
+                    <div class="btConcluirCadastro" id="btConcluirCadastro" data-ng-model="NGM_btConcluirCadastro" data-ng-click="NGCconcluirCadastro()">Concluir Cadastro</div>
+                    <input type="button" class="btVoltarCadastro2" id="btVoltarCadastro2" data-ng-click="NGCvoltarCadastro2()" value="Voltar" > 
+
+
+
+
+                </div>
+            </div>
+            
+        
+        
+        </div>
+    </div>
+</div>
+</body>
+
+</html>

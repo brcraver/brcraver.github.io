@@ -1,0 +1,430 @@
+.divCadastro{
+    transition: all linear 0.5s;
+    position: fixed;
+    z-index: -1;
+    top: 1%;
+    left: 200%;
+    width: 40%;
+    height: 98%;
+    border-radius: 5%;
+    background-image: linear-gradient(to right, #fdfbf5d2, #fdfbf5ec, #fdfbf5,  #fdfbf5, #fdfbf5ec, #fdfbf5d2);
+    box-shadow: 0.1em 0.1em 0.2em #fdfbf5;
+    opacity: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.btAvancarCadastro{
+    transition: all linear 0.5s;
+    width: 10%;
+    height: 2%;
+    top: 83%;
+    left: 38%;
+    position: absolute;
+    text-align: center;
+    border-radius: 3%;
+    font-size: 175%;  
+    cursor: pointer;		  
+}
+
+.btAvancarCadastro:hover{
+    width: 10%;
+    height: 2%;
+    position: absolute;
+    text-align: center;
+    border-radius: 3%;
+    font-size: 175%;  
+    cursor: pointer;	
+    text-shadow: 0.1em 0.1em 0.2em #87CEFA;	  
+}
+
+
+.btVoltarCadastro{
+    transition: all linear 0.5s;
+    width: 65%;
+    height: 5%;
+    top: 93%;
+    left: 15%;
+    border-color: transparent;
+    background-color: transparent;
+    position: absolute;
+    text-align: center;
+    border-radius: 3%;
+    font-size: 80%;  
+    cursor: pointer;
+    color: rgb(0, 247, 255);
+}
+
+.btVoltarCadastro:hover{
+    width: 65%;
+    height: 5%;
+    left: 15%;
+    border-color: transparent;
+    background-color: transparent;
+    position: absolute;
+    text-align: center;
+    border-radius: 3%;
+    font-size: 80%;  
+    cursor: pointer;	
+    text-shadow: 0.1em 0.1em 0.2em #1a73aab0;	  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.tbUsuarioNovoCadastro{
+    transition: all linear 0.5s;
+    top: 20%;
+    left: 20%;
+    height: 7%;
+    width: 60%;
+    border-radius: 5%;
+    background-color: transparent;
+    border-color: transparent;
+    border-bottom-color: black;
+    font-size: 100%;
+    text-align: center;
+    position: absolute;
+}
+
+.tbUsuarioNovoCadastro:focus{
+    outline: thin dotted;
+    outline: 0px auto -webkit-focus-ring-color;
+    outline-offset: 0px;
+}
+
+.tbEmailNovoCadastro{
+    transition: all linear 0.5s;
+    top: 30%;
+    left: 20%;
+    height: 7%;
+    width: 60%;
+    border-radius: 5%;
+    background-color: transparent;
+    border-color: transparent;
+    border-bottom-color: black;
+    font-size: 100%;
+    text-align: center;
+    position: absolute;
+}
+
+.tbEmailNovoCadastro:focus{
+    outline: thin dotted;
+    outline: 0px auto -webkit-focus-ring-color;
+    outline-offset: 0px;
+}
+
+.tbSenhaNovoCadastro{
+    transition: all linear 0.5s;
+    top: 40%;
+    left: 50%;
+    height: 7%;
+    width: 30%;
+    border-radius: 5%;
+    background-color: transparent;
+    border-color: transparent;
+    border-bottom-color: black;
+    font-size: 100%;
+    text-align: center;
+    position: absolute;
+}
+
+.tbSenhaNovoCadastro:focus{
+    outline: thin dotted;
+    outline: 0px auto -webkit-focus-ring-color;
+    outline-offset: 0px;
+}
+
+.tbConfirmSenhaNovoCadastro{
+    transition: all linear 0.5s;
+    top: 50%;
+    left: 50%;
+    height: 7%;
+    width: 30%;
+    border-radius: 5%;
+    background-color: transparent;
+    border-color: transparent;
+    border-bottom-color: black;
+    font-size: 100%;
+    text-align: center;
+    position: absolute;
+}
+
+.tbConfirmSenhaNovoCadastro:focus{
+    outline: thin dotted;
+    outline: 0px auto -webkit-focus-ring-color;
+    outline-offset: 0px;
+}
+
+.tbIdadeNovoCadastro{
+    transition: all linear 0.5s;
+    top: 60%;
+    left: 50%;
+    height: 7%;
+    width: 30%;
+    border-radius: 5%;
+    background-color: transparent;
+    border-color: transparent;
+    border-bottom-color: black;
+    font-size: 100%;
+    text-align: center;
+    position: absolute;
+}
+
+.tbIdadeNovoCadastro:focus{
+    outline: thin dotted;
+    outline: 0px auto -webkit-focus-ring-color;
+    outline-offset: 0px;
+}
+
+.tbSexoNovoCadastro{
+    transition: all linear 0.5s;
+    top: 70%;
+    left: 50%;
+    height: 7%;
+    width: 30%;
+    border-radius: 5%;
+    background-color: transparent;
+    border-color: transparent;
+    border-bottom-color: black;
+    font-size: 100%;
+    text-align: center;
+    position: absolute;
+}
+
+.tbSexoNovoCadastro:focus{
+    outline: thin dotted;
+    outline: 0px auto -webkit-focus-ring-color;
+    outline-offset: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.txSenhaCadastro{
+    transition: all linear 0.5s;
+    top: 38%;
+    left: 11%;
+    height: 7%;
+    width: 30%;
+    border-radius: 5%;
+    background-color: transparent;
+    border-color: transparent;
+    color: black;
+    font-size: 120%;
+    text-align: center;
+    position: absolute;
+}
+
+.txConfirmSenhaCadastro{
+    transition: all linear 0.5s;
+    top: 49%;
+    left: 18%;
+    height: 7%;
+    width: 30%;
+    border-radius: 5%;
+    background-color: transparent;
+    border-color: transparent;
+    color: black;
+    font-size: 120%;
+    text-align: center;
+    position: absolute;
+}
+
+.txIdadeCadastro{
+    transition: all linear 0.5s;
+    top: 60%;
+    left: 18.3%;
+    height: 7%;
+    width: 13%;
+    border-radius: 5%;
+    background-color: transparent;
+    border-color: transparent;
+    color: black;
+    font-size: 120%;
+    text-align: center;
+    position: absolute;
+}
+
+.txSexoCadastro{
+    transition: all linear 0.5s;
+    top: 70%;
+    left: 18.3%;
+    height: 7%;
+    width: 13%;
+    border-radius: 5%;
+    background-color: transparent;
+    border-color: transparent;
+    color: black;
+    font-size: 120%;
+    text-align: center;
+    position: absolute;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.txMaisCadastro{
+    transition: all linear 0.5s;
+    top: -4.5%;
+    left: 21%;
+    height: 7%;
+    width: 10%;
+    border-radius: 5%;
+    background-color: transparent;
+    border-color: transparent;
+    color: rgb(0, 247, 255);
+    font-size: 500%;
+    text-align: center;
+    position: absolute;
+}
+
+.txPlusCadastro{
+    transition: all linear 0.5s;
+    top: 2%;
+    left: 30%;
+    height: 7%;
+    width: 10%;
+    border-radius: 5%;
+    background-color: transparent;
+    border-color: transparent;
+    color: rgb(0, 247, 255);
+    font-size: 300%;
+    text-align: center;
+    position: absolute;
+}
+
+.txFriendsCadastro{
+    transition: all linear 0.5s;
+    top: 2%;
+    left: 50%;
+    height: 7%;
+    width: 10%;
+    border-radius: 5%;
+    background-color: transparent;
+    border-color: transparent;
+    color: black;
+    font-size: 300%;
+    text-align: center;
+    position: absolute;
+}
+
