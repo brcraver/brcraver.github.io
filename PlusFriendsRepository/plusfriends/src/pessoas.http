@@ -1,0 +1,23 @@
+@host = http://localhost:8080/plusFriends/getUsuarioBancoDados/lnovais/56666736
+
+
+###
+
+
+{{host}}
+
+###
+
+
+POST {{host}}
+Content-Type: application/json
+
+{
+    "nome": "teste",
+    "sobrenome": "da silva",
+    "sexo": "3",
+    "idade": 22,
+    "cpf": "123.123.123-00",
+    "email": "teste@teste.com",
+    "usuario": "tezinho"
+}

@@ -1,3 +1,4 @@
+
 .divInicial{
     background-color: rgba(255, 255, 255, 0.603);
     width: 300%;
@@ -44,19 +45,501 @@
 }
 
 
+
+
+
 .divBtsLogin{
     transition: all linear 0.5s;
     position: fixed;
-    z-index: 0;
+    z-index: 1;
     top: 13%;
-    left: 30%;
-    width: 40%;
-    height: 80%;
+    left: 80%;
+    width: 15%;
+    height: 35%;
     border-radius: 5%;
     background-image: linear-gradient(to right, #fdfbf5d2, #fdfbf5ec, #fdfbf5,  #fdfbf5, #fdfbf5ec, #fdfbf5d2);
-    box-shadow: 0.1em 0.1em 0.2em #fdfbf5;
+    text-shadow: 0.1em 0.1em 0.2em black;	  
     opacity: 100%;
 }
+
+
+.divInferiorTelaLogin{
+    transition: all linear 0.5s;
+    position: fixed;
+    z-index: 2;
+    top: 95%;
+    left: 0%;
+    width: 100%;
+    height: 400%;
+    background-color: rgba(15, 229, 236, 0.493);
+    border-width: 5px;
+    text-shadow: 0.1em 0.1em 0.1em rgba(0, 0, 0, 0.13);	  
+    opacity: 100%;
+}
+
+.divFundoParte1{
+    transition: all linear 0.5s;
+    position: relative;
+    top: -1.3%;
+    left: -10%;
+    width: 100%;
+    height: 25%;
+    background-color: white;
+    opacity: 0%;
+    -webkit-transition-delay: 0.8s;
+    transition-delay: 0.8s;
+}
+
+.divFundoParte2{
+    transition: all linear 0.5s;
+    position: relative;
+    top: -1.3%;
+    left: 20%;
+    width: 100%;
+    height: 25%;
+    background-color: black;
+    opacity: 0%;
+    -webkit-transition-delay: 0.8s;
+    transition-delay: 0.8s;
+}
+
+.divFundoParte3{
+    transition: all linear 0.5s;
+    position: relative;
+    top: -1.3%;
+    left: -10%;
+    width: 100%;
+    height: 25%;
+    background-color: white;
+    opacity: 0%;
+    -webkit-transition-delay: 0.8s;
+    transition-delay: 0.8s;
+}
+
+.divFundoParte4{
+    transition: all linear 0.5s;
+    position: relative;
+    top: -1.3%;
+    left: 20%;
+    width: 100%;
+    height: 25%;
+    background-color: black;
+    opacity: 0%;
+    -webkit-transition-delay: 0.8s;
+    transition-delay: 0.8s;
+}
+
+
+
+.popUpTxPlus{
+    position: fixed;
+    height: 25%;
+    width: 15%;
+    top: 55%;
+    left: 32%;
+    background-image: linear-gradient(to right, #fdfbf5d2, #fdfbf5ec, #fdfbf5,  #fdfbf5, #fdfbf5ec, #fdfbf5d2);
+    border-radius: 5%;
+    border: solid;
+    border-color: transparent;
+    cursor: pointer;
+    text-shadow: 0.1em 0.1em 0.2em black;	
+    font-family: American Typewriter, serif;
+}
+
+.popUpTxPlus2{
+    position: fixed;
+    height: 25%;
+    width: 15%;
+    top: 55%;
+    left: 48%;
+    background-image: linear-gradient(to right, #fdfbf5d2, #fdfbf5ec, #fdfbf5,  #fdfbf5, #fdfbf5ec, #fdfbf5d2);
+    border-radius: 5%;
+    border: solid;
+    border-color: transparent;
+    cursor: pointer;
+    text-shadow: 0.1em 0.1em 0.2em black;	
+    font-family: American Typewriter, serif;
+}
+
+
+
+
+.divImgFundoParte1{
+    transition: all linear 0.5s;
+    position: relative;
+    top: 15%;
+    left: 2%;
+    height: 60%;
+    width: 30%;
+    border-radius: 20pc;
+    background-image: url('../Imagem/fundoDivInferior1.jpg');
+}
+
+.divImgFundoParte2{
+    transition: all linear 0.5s;
+    position: relative;
+    top: 15%;
+    left: 68%;
+    height: 60%;
+    width: 30%;
+    border-radius: 20pc;
+    background-image: url('../Imagem/fundoDivInferior2.jpg');
+}
+
+.divImgFundoParte3{
+    transition: all linear 0.5s;
+    position: relative;
+    top: -35%;
+    left: 62%;
+    height: 62%;
+    width: 30%;
+    border-radius: 20pc;
+    background-image: url('../Imagem/fundoDivInferior3.jpg');
+}
+
+.divImgFundoParte4{
+    transition: all linear 0.5s;
+    position: relative;
+    top: -32%;
+    left: 10%;
+    height: 62%;
+    width: 30%;
+    border-radius: 20pc;
+    background-image: url('../Imagem/fundoDivInferior4.jpg');
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.menuSuperior{
+    transition: all linear 0.5s;
+    position: fixed;
+    z-index: 0;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 7%;
+    background-color: rgba(15, 229, 236, 0.815);
+    border-width: 5px;
+    text-shadow: 0.1em 0.1em 0.2em black;	  
+    opacity: 100%;
+    z-index: 2;
+}
+
+.btMenuLateral{
+    position: fixed;
+    left: 0.5%;
+    top: 0.5%;
+    width: 3%;
+    height: 5%;
+    border: solid;
+    border-color: transparent;
+    border-radius: 20%;
+    background-color: transparent;
+    z-index: 4;
+    cursor: pointer;
+}
+
+.img1BtMenuLateral{
+    position: fixed;
+    top: 1.5%;
+    left: 1.1%;
+    width: 2%;
+    height: 0.1%;
+    border: solid;
+    border-color: white;
+    border-radius: 5pc;
+    border-width: 2px;
+    background-color: white;
+    z-index: 3;
+    
+}
+
+.img2BtMenuLateral{
+    position: fixed;
+    top: 3%;
+    left: 1.1%;
+    width: 2%;
+    height: 0.1%;
+    border: solid;
+    border-color: white;
+    border-radius: 5pc;
+    border-width: 2px;
+    background-color: white;
+    z-index: 3;
+}
+.img3BtMenuLateral{
+    position: fixed;
+    top: 4.5%;
+    left: 1.1%;
+    width: 2%;
+    height: 0.1%;
+    border: solid;
+    border-color: white;
+    border-radius: 5pc;
+    border-width: 2px;
+    background-color: white;
+    z-index: 3;
+}
+
+.fundoEscudoMenuLateral{
+    position: fixed;
+    width: 110%;
+    height: 110%;
+    left: -1%;
+    top: -1%;
+    background-color: rgba(0, 0, 0, 0.699);
+    z-index: 5;
+    visibility: hidden;
+}
+
+.divMenuLateral{
+    transition: all linear 0.5s;
+    position: fixed;
+    width: 30%;
+    height: 110%;
+    top: -1%;
+    left: -111%;
+    background-color: white;
+    z-index: 6;
+    opacity: 0%;
+}
+
+.divSuperiorMenuLateral{
+    position: relative;
+    width: 100%;
+    height: 50%;
+    background-color: rgba(0, 230, 238, 0.432);
+
+}
+
+.imgDivSupMenuLateral{
+    position: relative;
+    top: 10%;
+    left: 22.5%;
+    width: 55%;
+    height: 60%;
+    background-image: url('../Imagem/Perfil.png');
+    background-color: white;
+    border: solid;
+    border-color: transparent;
+    border-radius: 15pc;
+
+}
+
+.btMenuLateralFazerLogin{
+    position: relative;
+    font-size: 120%;
+    color: black;
+    left: 70%;
+    top: 2%;
+    width: 25%;
+    height: 3%;
+    text-align:center;
+    vertical-align: middle;
+    border: solid;
+    border-color: transparent;
+    border-radius: 10%;
+    border-start-end-radius: 5px;
+    cursor: pointer;
+}
+
+.btMenuLateralFazerLogin:hover{
+    color: blue;
+}
+
+.btMenuLateralCriarConta{
+    position: relative;
+    font-size: 120%;
+    color: black;
+    left: 70%;
+    top: 2%;
+    width: 25%;
+    height: 3%;
+    text-align:center;
+    vertical-align: middle;
+    border: solid;
+    border-color: transparent;
+    border-radius: 10%;
+    border-start-end-radius: 5px;
+    cursor: pointer;
+}
+
+.btMenuLateralCriarConta:hover{
+    color: blue;
+}
+
+.divLinhaMenuLateral{
+    position: relative;
+    background-color: black;
+    width: 80%;
+    height: 0.5%;
+    left: 10%;
+    top: 20%;
+    border-top-left-radius: 50pc;
+    border-bottom-left-radius: 50pc;
+    border-top-right-radius: 50pc;
+    border-bottom-right-radius: 50pc;
+}
+
+.btDeslogarMenuLateral{
+    position: relative;
+    font-size: 120%;
+    color: black;
+    left: 8%;
+    top: 20%;
+    width: 25%;
+    height: 3%;
+    text-align:center;
+    vertical-align: middle;
+    border: solid;
+    border-color: transparent;
+    border-radius: 10%;
+    border-start-end-radius: 5px;
+    cursor: pointer;
+}
+
+.imgBtDeslogarMenuLateral{
+    position: relative;
+    color: black;
+    left: 10%;
+    top: 17.1%;
+    width: 5.5%;
+    height: 3%;
+    border: solid;
+    border-color: white;
+    border-radius: 10pc;
+    border-start-end-radius: 5px;
+    margin-left: -1%;
+    cursor: pointer;
+    background-image: url('../Imagem/Logout.png');
+}
+
+.txNomeUsuario{
+    position: relative;
+    top: 10%;
+    left: 0%;
+    border-radius: 5%;
+    background-color: transparent;
+    border: solid;
+    border-color: transparent;
+    color: white;
+    font-size: 200%;
+    font-family: American Typewriter, serif;
+    text-align: center;
+    z-index: 2;
+    -webkit-text-stroke-width: 0.5px; /* largura da borda */
+    -webkit-text-stroke-color: #000; /* cor da borda */    font-family: American Typewriter, serif;
+
+}
+
+.btMenuLateralFechar{
+    transition: all linear 0.3s;
+    position: fixed;
+    left: 15%;
+    top: 0.5%;
+    width: 3%;
+    height: 5%;
+    border: solid;
+    border-color: transparent;
+    border-radius: 20%;
+    background-color: transparent;
+    z-index: 6;
+    cursor: pointer;
+    -webkit-transition-delay: 0.35s;
+    transition-delay: 0.35s;
+    opacity: 0%;
+
+}
+
+.img1BtMenuLateralFechar{
+    transition: all linear 0.3s;
+    position: fixed;
+    top: 3%;
+    left: 15.6%;
+    width: 2%;
+    height: 0.1%;
+    border: solid;
+    border-color: white;
+    border-radius: 5pc;
+    border-width: 2px;
+    background-color: white;
+    z-index: 5;
+    -webkit-transition-delay: 0.35s;
+    transition-delay: 0.35s;
+    opacity: 0%;
+
+
+}
+
+.img2BtMenuLateralFechar{
+    transition: all linear 0.3s;
+    position: fixed;
+    top: 1.6%;
+    left: 15.6%;
+    width: 2%;
+    height: 0.1%;
+    border: solid;
+    border-color: white;
+    border-radius: 5pc;
+    border-width: 2px;
+    background-color: white;
+    z-index: 5;
+    -webkit-transition-delay: 0.35s;
+    transition-delay: 0.35s;
+    opacity: 0%;
+
+}
+.img3BtMenuLateralFechar{
+    transition: all linear 0.3s;
+    position: fixed;
+    top: 4.5%;
+    left: 15.6%;
+    width: 2%;
+    height: 0.1%;
+    border: solid;
+    border-color: white;
+    border-radius: 5pc;
+    border-width: 2px;
+    background-color: white;
+    z-index: 5;
+    -webkit-transition-delay: 0.35s;
+    transition-delay: 0.35s;
+    opacity: 0%;
+
+}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -74,23 +557,18 @@
     transition: all linear 0.5s;
     width: 10%;
     height: 2%;
-    top: 35%;
-    left: 45%;
+    top: 26%;
+    left: 35%;
     position: relative;
     text-align: center;
     border-radius: 3%;
-    font-size: 175%;  
+    font-size: 125%;  
     cursor: pointer;		  
+    text-shadow: 0.1em 0.1em 0.2em white;	
+    font-family: American Typewriter, serif;
 }
 
 .btLogin:hover{
-    width: 10%;
-    height: 2%;
-    left: 45%;
-    position: relative;
-    text-align: center;
-    border-radius: 3%;
-    font-size: 175%;  
     cursor: pointer;	
     text-shadow: 0.1em 0.1em 0.2em #87CEFA;	  
 }
@@ -98,34 +576,26 @@
 
 .btCadastro{
     transition: all linear 0.5s;
-    width: 65%;
+    width: 25%;
     height: 5%;
-    top: 45%;
-    left: 20%;
+    top: 37%;
+    left: 75%;
     border-color: transparent;
     background-color: transparent;
-    position: relative;
+    position: fixed;
     text-align: center;
     border-radius: 3%;
     font-size: 80%;  
     cursor: pointer;
     color: rgb(0, 247, 255);
+    text-shadow: 0.1em 0.1em 0.2em white;	  
     z-index: 1;		  
+    font-family: American Typewriter, serif;
+
 }
 
 .btCadastro:hover{
-    width: 65%;
-    height: 5%;
-    left: 20%;
-    border-color: transparent;
-    background-color: transparent;
-    position: relative;
-    text-align: center;
-    border-radius: 3%;
-    font-size: 80%;  
-    cursor: pointer;	
     text-shadow: 0.1em 0.1em 0.2em #1a73aab0;	  
-    z-index: 1;
 }
 
 .cbCadastroNovo{
@@ -139,6 +609,466 @@
     color: transparent;
     border-color: transparent;
 }
+
+
+.divBtDivInferior{
+    transition: all linear 0.1s;
+    position: relative;
+    z-index: 1;
+    top: -1.2%;
+    left: 45%;
+    width: 4%;
+    height: 2%;
+    border-radius: 10pc;
+    background-color: rgba(15, 229, 236, 0.938);
+    border: solid;
+    border-color: white;
+    border-width: 1px;
+    cursor: pointer;
+}
+
+.divBtDivInferior:hover{
+    top: -1.4%;
+    left: 44.8%;
+    width: 4.5%;
+    height: 2.4%;
+}
+
+.divBtFacebookLogin{
+    position: relative;
+    height: 17%;
+    width: 19%;
+    top: 46%;
+    left: 40%;
+    cursor: pointer;
+    -webkit-text-stroke-width: 2px; 
+    -webkit-text-stroke-color: rgb(235, 235, 235);
+    text-shadow: 0.1em 0.1em 0.2em black;	  
+}
+.divBtFacebookLogin:hover{
+    filter: blur(0.8px);
+}
+
+.divBtGoogleLogin{
+    position: relative;
+    height: 18%;
+    width: 20%;
+    top: 46%;
+    left: 20%;
+    cursor: pointer;
+    -webkit-text-stroke-width: 2px; 
+    -webkit-text-stroke-color: rgb(235, 235, 235);
+    text-shadow: 0.1em 0.1em 0.2em black;	  
+
+}
+
+.divBtGoogleLogin:hover{
+    filter: blur(0.8px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.divImgLogo1{
+    transition: all linear 0.5s;
+    position: fixed;
+    top: 10%;
+    left: 45%;
+    height:40%;
+    width: 5%;
+    border-radius: 5%;
+    background-image: linear-gradient(to bottom, rgb(0, 247, 255), rgba(0, 247, 255, 0.384), rgba(255, 255, 255, 0.055), rgba(255, 255, 255, 0.226), rgba(0, 247, 255, 0.555), rgba(0, 247, 255, 0.616));
+    border-color: transparent;
+    z-index: 1;
+    border-bottom-left-radius: 100pc;
+    border-bottom-right-radius: 5pc;
+    -webkit-text-stroke-width: 2px; 
+    -webkit-text-stroke-color: rgb(235, 235, 235);
+    text-shadow: 0.1em 0.1em 0.2em black;	  
+
+}
+
+.divImgLogo2{
+    transition: all linear 0.5s;
+    position: fixed;
+    top: 23%;
+    left: 38%;
+    height:10%;
+    width: 20%;
+    border-radius: 5%;
+    border-top-right-radius: 5pc;
+    border-bottom-right-radius: 100pc;
+    background-image: linear-gradient(to right, rgb(0, 247, 255), rgb(0, 247, 255), rgba(239, 248, 248, 0.288),  rgba(228, 246, 247, 0.322),    rgba(220, 234, 235, 0.664), rgba(0, 247, 255, 0.39), rgba(0, 247, 255, 0.336));
+    border-color: transparent;
+    z-index:2;
+    -webkit-text-stroke-width: 2px; 
+    -webkit-text-stroke-color: rgb(235, 235, 235);
+    box-shadow: 0.1em 0.1em 0.2em black;	
+}
+
+.divPessoasOnline{
+    transition: all linear 0.5s;
+    position: fixed;
+    top: 20%;
+    left: 0%;
+    height:6%;
+    width: 20%;
+    border-radius: 5%;
+    border-top-right-radius: 5pc;
+    border-bottom-right-radius: 100pc;
+    background-image: linear-gradient(to right, #fdfbf5d2, #fdfbf5ec, #fdfbf5,  #fdfbf5, #fdfbf5ec, #fdfbf5d2);
+    border-color: transparent;
+    z-index:2;
+    font-family: American Typewriter, serif;
+    color: black;
+    font-size: 100%;
+}
+
+.txNumDivPessoasOnline{
+    position: relative;
+    top: -20%;
+    left: 12.5%;
+}
+
+.txDivPessoasOnline{
+    position: relative;
+    top: -110%;
+    left: 30%;
+}
+
+.txStatusDivPessoasOnline{
+    position: relative;
+    top: -192%;
+    left: 72%;
+    width: 5%;
+    height: 35%;
+    border-radius: 15pc;
+    background-color: red;
+}
+
+.lupaPt1{
+    transition: all linear 0.5s;
+    position: fixed;
+    height: 2%;
+    width: 0.3%;
+    top: 70.5%;
+    left: 38.6%;
+    z-index: 2;
+    border-radius: 30%;
+    background-color: black;
+    transform: skew(-30deg); /* Padrão */
+    cursor: pointer;
+}
+
+.lupaPt2{
+    transition: all linear 0.5s;
+    position: fixed;
+    height: 3.5%;
+    width: 1.7%;
+    top: 66.7%;
+    left: 38.5%;
+    z-index: 2;
+    border-radius: 30pc;
+    background-color: rgba(255, 255, 255, 0.226);
+    border-color: black;
+    border-width: 50%;
+    border: solid;
+    cursor: pointer;
+}
+
+
+.lupa3Pt1{
+    transition: all linear 0.5s;
+    position: relative;
+    height: 10%;
+    width: 3%;
+    top: 60%;
+    left: 42%;
+    border-radius: 30%;
+    background-color: black;
+    transform: skew(-30deg); /* Padrão */
+    cursor: pointer;
+}
+
+.lupa3Pt2{
+    transition: all linear 0.5s;
+    position: relative;
+    height: 18%;
+    width: 17%;
+    top: 30%;
+    left: 40%;
+    border-radius: 30pc;
+    background-color: rgba(255, 255, 255, 0.226);
+    border-color: black;
+    border-width: 50%;
+    border: solid;
+    cursor: pointer;
+}
+
+
+
+.lupa4Pt1{
+    transition: all linear 0.5s;
+    position: relative;
+    height: 10%;
+    width: 3%;
+    top: 60%;
+    left: 42%;
+    border-radius: 30%;
+    background-color: black;
+    transform: skew(-30deg); /* Padrão */
+    cursor: pointer;
+}
+
+.lupa4Pt2{
+    transition: all linear 0.5s;
+    position: relative;
+    height: 18%;
+    width: 17%;
+    top: 30%;
+    left: 40%;
+    border-radius: 30pc;
+    background-color: rgba(255, 255, 255, 0.226);
+    border-color: black;
+    border-width: 50%;
+    border: solid;
+    cursor: pointer;
+}
+
+
+.txFacaAmigos{
+    transition: all linear 0.5s;
+    position: fixed;
+    top: 66.7%;
+    left: 36%;
+    z-index: 2;
+    color: black;
+    opacity: 0%;
+    cursor: pointer;
+}
+
+.lupa2Pt1{
+    transition: all linear 0.5s;
+    position: fixed;
+    height: 2%;
+    width: 0.3%;
+    top: 70.5%;
+    left: 54.6%;
+    z-index: 2;
+    border-radius: 30%;
+    background-color: black;
+    transform: skew(-30deg); /* Padrão */
+    cursor: pointer;
+}
+
+.lupa2Pt2{
+    transition: all linear 0.5s;
+    position: fixed;
+    height: 3.5%;
+    width: 1.7%;
+    top: 66.7%;
+    left: 54.5%;
+    z-index: 2;
+    border-radius: 30pc;
+    background-color: rgba(255, 255, 255, 0.226);
+    border-color: black;
+    border-width: 50%;
+    border: solid;
+    cursor: pointer;
+}
+
+.divImgDivBtDivInferior1{
+    transition: all linear 0.1s;
+    position: relative;
+    top: 47%;
+    left: 18%;
+    height: 0%;
+    width: 50%;
+    border-bottom-width: 0.2%;
+    border: solid;
+    border-color: white;
+    border-radius: 20pc;
+    background-color: white;
+}
+
+.txTituloDivImgDivBtDivInferior1{
+    transition: all linear 0.5s;
+    position: relative;
+    top: 10%;
+    left: 125%;
+    font-size: 150%;
+}
+
+.txTituloDivImgDivBtDivInferior2{
+    transition: all linear 0.5s;
+    position: relative;
+    top: -40%;
+    left: 40%;
+    font-size: 150%;
+    color: white;
+    opacity: 100%;
+}
+
+.txDivImgDivBtDivInferior1{
+    transition: all linear 0.5s;
+    position: relative;
+    top: 10%;
+    left: 110%;
+    opacity: 0%;
+    -webkit-transition-delay: 2s;
+    transition-delay: 2s;
+}
+
+.txDivImgDivBtDivInferior2{
+    transition: all linear 0.5s;
+    position: relative;
+    top: -40%;
+    left: 25%;
+    width: 30%;
+    height: 50%;
+    opacity: 0%;
+    -webkit-transition-delay: 2s;
+    transition-delay: 2s;
+    color: white;
+    text-align: justify;
+}
+
+.txDivImgDivBtDivInferior3{
+    transition: all linear 0.5s;
+    position: relative;
+    top: -115%;
+    left: 40%;
+    font-size: 150%;
+    color: black;
+    opacity: 100%;
+}
+
+.txDivImgDivBtDivInferior4{
+    transition: all linear 0.5s;
+    position: relative;
+    top: -110%;
+    left: 40%;
+    font-size: 150%;
+    color: white;
+    opacity: 100%;
+}
+
+
+
+
+.btHomeDivImgDivBtDivInferior1{
+    transition: all linear 0.5s;
+    position: fixed;
+    top: 90%;
+    left: 86%;
+    height: 5%;
+    width: 2%;
+    opacity: 0%;
+    cursor: pointer;
+    background-image: url('../Imagem/LogoHome.png');
+    -webkit-transition-delay: 3s;
+    transition-delay: 3s;
+    z-index: 6;
+}
+
+.btDivImgDivBtDivInferior1{
+    transition: all linear 0.5s;
+    position: fixed;
+    top: 90%;
+    left: 88%;
+    height: 5%;
+    width: 3%;
+    opacity: 0%;
+    cursor: pointer;
+    -webkit-transition-delay: 3s;
+    transition-delay: 3s;
+    z-index: 6;
+}
+
+.img1BtDivImgDivBtDivInferior1{
+    position: relative;
+    left: 51.3%;
+    height: 92%;
+    width: 8%;
+    border-radius: 15pc;
+    background-color: black;
+}
+
+.img1BtDivImgDivBtDivInferior2{
+    position: relative;
+    left: 35%;
+    top: -40%;
+    height: 40%;
+    width: 8%;
+    border-radius: 15pc;
+    background-color: black;
+    transform: skew(40deg); /* Padrão */
+}
+
+.img1BtDivImgDivBtDivInferior3{
+    position: relative;
+    left: 68%;
+    top: -80%;
+    height: 40%;
+    width: 10%;
+    border-radius: 15pc;
+    background-color: black;
+    transform: skew(-40deg); /* Padrão */
+}
+
+
+
+
+.divImgDivBtDivInferior2{
+    transition: all linear 0.1s;
+    position: relative;
+    top: 8%;
+    left: 45%;
+    height: 50%;
+    width: 0%;
+    border-bottom-width: 0.2%;
+    border: solid;
+    border-color: white;
+    border-radius: 20pc;
+    background-color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -155,7 +1085,7 @@
 .tbUsuarioEmail{
     transition: all linear 0.5s;
     top: 15%;
-    left: 20%;
+    left: 17%;
     height: 7%;
     width: 60%;
     border-radius: 5%;
@@ -165,6 +1095,7 @@
     font-size: 100%;
     text-align: center;
     position: relative;
+    font-family: American Typewriter, serif;
 }
 
 .tbUsuarioEmail:focus{
@@ -176,7 +1107,7 @@
 .tbSenha{
     transition: all linear 0.5s;
     top: 25%;
-    left: 20%;
+    left: 17%;
     height: 7%;
     width: 60%;
     border-radius: 5%;
@@ -218,59 +1149,112 @@
 
 .txMais{
     transition: all linear 1s;
-    top: -5%;
-    left: 21%;
+    top: -20%;
+    left: 40%;
     height: 7%;
     width: 10%;
     border-radius: 5%;
     background-color: transparent;
     border-color: transparent;
-    color: rgb(0, 247, 255);
-    font-size: 500%;
+    color: white;
+    font-size: 2000%;
+    font-family: Comic Sans MS, Comic Sans, cursive;
     text-align: center;
-    position: relative;
-    cursor: pointer;	
+    position: fixed;
+    z-index: 1;
+    -webkit-text-stroke-width: 2px; 
+    -webkit-text-stroke-color: rgb(235, 235, 235);
+    text-shadow: 0.1em 0.1em 0.2em black;	  
 
 }
 
 .txPlus{
-    transition: all linear 1s;
-    top: -3.5%;
-    left: 30%;
-    height: 7%;
-    width: 10%;
-    border-radius: 5%;
-    background-color: transparent;
-    border-color: transparent;
-    color: rgb(0, 247, 255);
-    font-size: 300%;
-    text-align: center;
+    transition: all linear 0.7s;
     position: relative;
-    cursor: pointer;	
-
-}
-
-.txFriends{
-    transition: all linear 1s;
-    top: -10.5%;
-    left: 48%;
+    top: 40%;
+    left: 10%;
     height: 7%;
-    width: 10%;
+    width: 80%;
     border-radius: 5%;
     background-color: transparent;
     border-color: transparent;
     color: black;
-    font-size: 300%;
+    font-size: 125%;
+    font-family: Comic Sans MS, Comic Sans, cursive;
     text-align: center;
-    position: relative;
-    cursor: pointer;	
+    z-index: 1;	
+}
+
+.txDescubraLugares{
+    transition: all linear 0.5s;
+    position: fixed;
+    top: 66.7%;
+    left: 49%;
+    z-index: 2;
+    color: black;
+    opacity: 0%;
+    cursor: pointer;
+}
+
+.txFriends{
+    transition: all linear 1s;
+    top: 24%;
+    left: 43%;
+    height: 9%;
+    width: 6%;
+    border-radius: 5%;
+    background-color: transparent;
+    border: solid;
+    border-color: transparent;
+    color: white;
+    font-size: 225%;
+    -webkit-text-stroke-width: 2px; /* largura da borda */
+    -webkit-text-stroke-color: #000; /* cor da borda */    font-family: American Typewriter, serif;
+    text-align: center;
+    position: fixed;
+    z-index: 1;	
+    -webkit-text-stroke-width: 0.6px; 
+    -webkit-text-stroke-color: black;
+    text-shadow: 0.1em 0.1em 0.2em black;	  
+    z-index: 2;
+}
+
+.txPlusMenuSuperior{
+    transition: all linear 1s;
+    top: 0.3%;
+    left: 42%;
+    border-radius: 5%;
+    background-color: transparent;
+    border: solid;
+    border-color: transparent;
+    color: white;
+    font-size: 200%;
+    font-family: American Typewriter, serif;
+    text-align: center;
+    position: fixed;
+    z-index: 2;
+    -webkit-text-stroke-width: 0.5px; /* largura da borda */
+    -webkit-text-stroke-color: #000; /* cor da borda */    font-family: American Typewriter, serif;
 
 }
 
-
-
-
-
+.txFriendsMenuSuperior{
+    transition: all linear 1s;
+    top: 0.3%;
+    left: 46.5%;
+    border-radius: 5%;
+    background-color: transparent;
+    border: solid;
+    border-color: transparent;
+    color: white;
+    font-size: 200%;
+    font-family: American Typewriter, serif;
+    text-align: center;
+    position: fixed;
+    z-index: 2;
+    -webkit-text-stroke-width: 0.5px; /* largura da borda */
+    -webkit-text-stroke-color: #000; /* cor da borda */    font-family: American Typewriter, serif;
+}
 
 
 

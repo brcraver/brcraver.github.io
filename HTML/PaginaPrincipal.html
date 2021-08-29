@@ -1,19 +1,43 @@
 <!DOCTYPE html>
 <html>
     <head>
-
-
         <script>
+            function NGCbtFecharPopUp(){
+                    window.location.href = "../index.html";
+                }
+        </script>
+        <!--
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+		<script>
+		
             var app = angular.module('PlusFriends',[]);
             app.controller('divCtrlInicial', function($scope, $http){
-                $http.get("")
-            })
+                
+
+
+				$http.get("http://localhost:8080/plusFriends/getUsuarioBancoDados/lnovais/56666736").then(function (response) {
+                    $scope.NGBblurTeste = function(){
+                        $scope.myData = response.data;
+                    }
+				});
+            });
+
         </script>
+        -->
+        <link rel="stylesheet" href="../CSS/CSS-PaginaPrincipal-PopUp.css" Type="text/css">
 
     </head>
     <body>
-        <div class="divInicial" id="divInicial" ng-app="PlusFriends" ng-controller="divCtrlInicial">
-            <p><h1>Pagina encontra-se em desenvolvimento</h1>></p>
+        <!--
+        <div class="divInicial" id="divInicial" ng-app="PlusFriends" >
+            <input type="text" ng-model="NGM_teste" ng-blur="NGBblurTeste()" name="teste" id="teste">
+            <ul><li ng-repeat="x in myData.nome">{{x}}</li></ul>
         </div>
+        -->
+        <div class="popUp" id="popUp" ng-app="PlusFriends" ng-controller="divCtrlInicial">
+            <div class="msgPopUp" id="msgPopUp" data-ng-model="NGMtxtMsgPopUp" data-ng-bind="txtMsgPopUp">Página encontra-se em desenvolvimento! <br>Por favor, volte em breve!</div>
+            <div class="btPopUp" id="btPopUp" onclick="NGCbtFecharPopUp()">Okay</div>
+        </div>
+        
     </body>
 </html>

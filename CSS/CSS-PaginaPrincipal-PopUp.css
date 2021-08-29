@@ -1,15 +1,18 @@
+body{
+    background-color: rgb(228, 241, 241);
+}
+
 .popUp{
-    transition: all linear 0.5s;
     position: fixed;
-    top: -5%;
-    left: 40%;
-    width: 20%;
-    height: 20%;
+    top: 35%;
+    left: 35%;
+    width: 30%;
+    height: 30%;
     background-color: white;
     border: solid;
     border-radius: 5%;
     border-color: rgb(15, 229, 236);
-    opacity: 0%;
+    opacity: 100%;
 }
 
 .msgPopUp{
